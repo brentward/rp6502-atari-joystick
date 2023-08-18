@@ -14,14 +14,14 @@ _joystick:			.res 1 ; first 2 bytes are controller button state and 3rd byte is 
 ; will need a pullup resistor to 3.3 V, which is on GPIO pin 1.
 
 ; Joystick	GPIO
-; 1         3
-; 2         5
-; 3         7
-; 4         9
+; 1(up)     3 (PA0)
+; 2(down)   5 (PA1)
+; 3(left)   7 (PA2)
+; 4(right)  9 (PA3)
 ; 5         NC
-; 6         11
+; 6(fire)   11 (PA4)
 ; 7         NC
-; 8         23
+; 8(GND)    23 (GND)
 ; 9         NC
 
 bit_up = $01 ; PA0 (GPIO pin 3): Up
